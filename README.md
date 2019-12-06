@@ -1,2 +1,2 @@
 # Java
-Projects using Java
+Projects and practicing examples using Java
