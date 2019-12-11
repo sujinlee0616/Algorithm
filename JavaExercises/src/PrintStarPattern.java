@@ -43,6 +43,16 @@ public class PrintStarPattern {
 		}
 		System.out.println();
 		
+		
+		// 12345
+		//  678
+		//   9
+		//  101112
+		// 1314151617
+		
+		
+		
+		
 	}
 
 }
