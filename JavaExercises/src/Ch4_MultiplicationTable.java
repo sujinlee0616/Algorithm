@@ -1,5 +1,5 @@
 
-public class ForLoop_MultiplicationTable {
+public class Ch4_MultiplicationTable {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
