@@ -85,7 +85,7 @@ public class Ch4_PrintStarPattern {
 		}
 		System.out.println();
 		
-		//#2-3 Hollow Inverted Half Pyramid
+		// #2-3 Hollow Inverted Half Pyramid
 		for(int i=1;i<=rows;i++) {
 			if(i==1) {
 				for(int j=1;j<=rows;j++) {
@@ -107,8 +107,7 @@ public class Ch4_PrintStarPattern {
 		}
 		System.out.println();
 		
-		//#2-3 Hollow Inverted Half Pyramid Right Arrange
-		//Not finished yet...
+		// #2-3 Hollow Inverted Half Pyramid Right Arrange
 		for (int i=1;i<=rows;i++) {
 			if(i==1) {
 				for(int j=1;j<=rows;j++) {
@@ -136,7 +135,13 @@ public class Ch4_PrintStarPattern {
 		}
 		System.out.println();	
 		
-		//#2-4 Full Pyramid 
+		// #2-4 Full Pyramid 
+		// 
+		
+		
+		// Pattern #5 - Diamond
+		
+		// #5-1 
 
 		
 		
