@@ -1,8 +1,9 @@
+package hyuk;
 
 
 import java.util.Scanner;
 
-public class q3052_2 {
+public class BOJ_q3052_2 {
 	private final static int MAX_SIZE = 10;
 	private final static int REST = 42;
 	
