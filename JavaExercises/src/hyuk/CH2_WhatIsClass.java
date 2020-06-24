@@ -1,6 +1,7 @@
+package hyuk;
 
 
-public class WhatIsClass {
+public class CH2_WhatIsClass {
 	static final int VMAX = 21; // 0.0부터 시작해서 0.1씩 증가한튼 분포로, 총 21개라는 뜻
 
 	/* ^^
