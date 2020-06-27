@@ -1,4 +1,4 @@
-package hyuk;
+package hyuk.presentation;
 
 
 public class CH2_WhatIsClass {
