@@ -1,4 +1,4 @@
-package hyuk;
+package hyuk.boj;
 
 
 import java.util.Scanner;
