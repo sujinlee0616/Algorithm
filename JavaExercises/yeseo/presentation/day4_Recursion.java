@@ -1,4 +1,4 @@
-package yeseo_presentation;
+package presentation;
 
 import java.util.Scanner;
 

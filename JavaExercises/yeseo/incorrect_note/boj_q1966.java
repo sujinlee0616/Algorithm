@@ -1,4 +1,4 @@
-package yeseo_incorrect_note;
+package incorrect_note;
 
 import java.util.LinkedList;
 import java.util.Queue;
