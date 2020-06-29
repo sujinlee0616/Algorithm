@@ -1,4 +1,4 @@
-package yeseo;
+package boj;
 
 import java.util.Scanner;
 
