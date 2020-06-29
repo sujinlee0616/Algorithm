@@ -1,4 +1,4 @@
-package algorithm;
+package boj;
 import java.util.Scanner;
 
 public class boj_q2438_star {

@@ -1,4 +1,4 @@
-package algorithm;
+package datastructure_book;
 
 import java.util.Scanner;
 

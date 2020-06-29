@@ -1,9 +1,9 @@
-package algorithm;
+package etc;
 
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
-public class etc_1 {
+public class etc_200628_codingtest1 {
     //유형 1 : 010-XXXX-XXXX
     //유형 2 : 010XXXXXXXX
     //유형 3 : +82-10-XXXX-XXXX

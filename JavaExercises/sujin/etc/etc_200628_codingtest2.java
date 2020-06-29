@@ -1,9 +1,9 @@
-package algorithm;
+package etc;
 
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
-public class etc_2 {
+public class etc_200628_codingtest2 {
 	
 	public static void main(String[] args) {
 		// 입력 받음  
@@ -34,7 +34,6 @@ public class etc_2 {
 			// 1. 이름 부분과 도메인 부분으로 나눠본다 - @없어서 못 나누면 잘못된 이메일임. 
 			if(arr[i].indexOf("@")==-1) {
 				check[i]="WRONG";
-				//System.out.println("count1="+count1);
 			}
 			
 			else {
@@ -47,6 +46,7 @@ public class etc_2 {
 				// 2. 이름 부분 유효성 체크 
 				if(name[i].length()<1) {
 					check[i]="WRONG";
+					System.out.println("check["+i+"]=WRONG");
 				}
 				if(name[i].equalsIgnoreCase(name[i])) {
 				}
@@ -56,7 +56,7 @@ public class etc_2 {
 				
 				// 3. 도메인 부분 유효성 체크 
 				int do_leng=domain[i].length();
-				String last4letters=domain[i].substring(do_leng-4,do_leng-1);
+				String last4letters=domain[i].substring(do_leng-4,do_leng);
 				//System.out.println("last4letters="+last4letters);
 				if(last4letters.equals(".com") || last4letters.equals(".net") || last4letters.equals(".org")) {
 				}
