@@ -1,11 +1,8 @@
 package etc;
 
-import java.util.Scanner;
-
 // 배열 emails : 매개변수 
 
 public class etc_200629_codingtest2 {
-	
 	
 	public static int solution(String[] emails) {
 		int answer=0;
@@ -44,7 +41,9 @@ public class etc_200629_codingtest2 {
 				domain[i]=emails[i].substring(emails[i].indexOf("@"),emails[i].length());
 				//System.out.println("domain["+i+"]="+domain[i]);
 				
-				// 1) 도메인 부분 유효성 체크 
+				// 1) 도메인 부분 유효성 체크 ===> 런타임 에러 
+				// 	- 입력 : {“@”}
+				//  - 이럴 경우, length : 1인데, 지금 로직으로는 do_leng-4 = -3
 				int do_leng=domain[i].length();
 				String last4letters=domain[i].substring(do_leng-4,do_leng);
 				//System.out.println("last4letters="+last4letters);

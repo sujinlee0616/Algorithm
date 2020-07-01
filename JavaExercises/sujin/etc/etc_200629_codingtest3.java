@@ -2,6 +2,10 @@ package etc;
 
 public class etc_200629_codingtest3 {
 
+	// 스택 문제 - 스택 안 쓰면 시간초과됨! ^^!!!
+	// 난 스택 안 썼는데 !!!! 
+	// 이렇게 풀면 시간초과됨 ㅋㅋㅋ 
+	
 	public static int solution(String S) {
 		
 		// 문자를 한 글자씩 잘라서 배열에 넣는다 
