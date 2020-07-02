@@ -44,7 +44,10 @@ public class swea_q5658_rotate_an_array {
 	}
 	*/
 	
-	// 크기가 N인 배열을 M개씩 끊어서?
+	// Q. 크기가 N인 배열을 M개씩 끊어서 출력
+	// idea1. for문해서 값이 12가 넘어갈 때를 %12하여 해결 
+	// idea2. for문 돌리는 기준을 잘 생각해냈음 
+	//  - 나는 i랑 k 돌리는 기준까진 생각했는데 j랑 pos 형태로 만들 생각을 못 했네...
 	public static void main(String[] args) {
 		int N=35;
 		int M=7;
