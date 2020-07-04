@@ -5,10 +5,10 @@ import java.util.Stack;
 
 // int형 스택의 사용 예 
 
-public class Ch4_IntStackTester {
+public class Ch4_p142_prac2_IntStackTester {
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
-		Ch4_IntStack s=new Ch4_IntStack(64); // 만들어놓은 애.. 사용...
+		Ch4_p136_prac1_IntStack s=new Ch4_p136_prac1_IntStack(64); // 만들어놓은 애.. 사용...
 		
 		while(true) {
 			System.out.println("현재 데이터 수:"+s.size()+"/"+s.capacity());
@@ -24,7 +24,7 @@ public class Ch4_IntStackTester {
 					x=sc.nextInt();
 					try {
 						s.push(x);
-					} catch (Ch4_IntStack.OverflowInstackException e) {
+					} catch (Ch4_p136_prac1_IntStack.OverflowInstackException e) {
 						System.out.println("스택이 가득찼습니다.");
 					}
 				break;
@@ -33,7 +33,7 @@ public class Ch4_IntStackTester {
 					try {
 						x=s.pop();
 						System.out.println("팝한 데이터는 "+x+"입니다. ");
-					} catch (Ch4_IntStack.EmptyInStackException e) {
+					} catch (Ch4_p136_prac1_IntStack.EmptyInStackException e) {
 						System.out.println("스택이 비어 있습니다. ");
 					}
 				break;
@@ -43,7 +43,7 @@ public class Ch4_IntStackTester {
 						x=s.peek();
 						System.out.println("peek한 데이터는 "+x+"입니다. ");
 						
-					} catch (Ch4_IntStack.EmptyInStackException e) {
+					} catch (Ch4_p136_prac1_IntStack.EmptyInStackException e) {
 						System.out.println("스택이 비어 있습니다. ");
 					}
 				break;

@@ -2,7 +2,7 @@ package datastructure_book;
 
 import java.util.Scanner;
 
-public class book_p57_array_reverse {
+public class Ch2_p57_prac6_reverse_array {
 
 
 	// 배열을 역순으로 바꾼다. 

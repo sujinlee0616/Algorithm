@@ -2,7 +2,7 @@ package datastructure_book;
 
 // 연습문제 Q2.임의의 객체형 데이터를 쌓을 수 있는 제네릭 스택 클래스 Gstack<E>를 작성하세요.
 
-public class Ch4_q2_Gstack<E> {
+public class Ch4_p144_q2_Gstack<E> {
 	private int max; // 스택 용량 
 	private int ptr; // 스택 포인터 
 	private E[] stk; // 스택 본체 
@@ -20,7 +20,7 @@ public class Ch4_q2_Gstack<E> {
 	}
 
 	// 생성자 
-	public Ch4_q2_Gstack(int capacity) {
+	public Ch4_p144_q2_Gstack(int capacity) {
 		ptr=0;
 		max=capacity;
 		try {

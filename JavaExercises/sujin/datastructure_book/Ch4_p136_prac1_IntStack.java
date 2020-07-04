@@ -1,6 +1,6 @@
 package datastructure_book;
 
-public class Ch4_IntStack {
+public class Ch4_p136_prac1_IntStack {
 	
 	private int max; // 스택 용량 
 	private int ptr; // 스택 포인터 
@@ -15,7 +15,7 @@ public class Ch4_IntStack {
 		public void OverflowInStackException() {}
 	}
 	// 생성자 
-	public Ch4_IntStack(int capacity) {
+	public Ch4_p136_prac1_IntStack(int capacity) {
 		ptr=0;
 		max=capacity;
 		try {

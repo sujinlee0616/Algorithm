@@ -4,7 +4,7 @@ package datastructure_book;
 // 하나의 배열을 공유하여 2개의 스택을 구현하는 int형 데이터용 스택 클래스를 만드세요. 
 // 스택에 저장하는 데이터는 int형 값으로 그림처럼 배열의 처음과 끝을 사용하세요. 
 
-public class Ch4_q3_IntStack {
+public class Ch4_p144_q3_IntStack {
 	private int max; // 스택의 용량 (A-B의 합계)
 	private int ptrA; // 스택 포인터 A
 	private int ptrB; // 스택 포인터 B
@@ -27,7 +27,7 @@ public class Ch4_q3_IntStack {
 	}
 
 	// 생성자
-	public Ch4_q3_IntStack(int capacity) {
+	public Ch4_p144_q3_IntStack(int capacity) {
 		ptrA = 0;
 		ptrB = capacity - 1;
 		max = capacity;
