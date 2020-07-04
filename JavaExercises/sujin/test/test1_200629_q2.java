@@ -1,8 +1,8 @@
-package etc;
+package test;
 
 // 배열 emails : 매개변수 
 
-public class etc_200629_codingtest2 {
+public class test1_200629_q2 {
 	
 	public static int solution(String[] emails) {
 		int answer=0;

@@ -1,6 +1,6 @@
-package etc;
+package test;
 
-public class test1 {
+public class test2_200704_q1 {
 	
 	// 이름이 포함되어 있는지 아닌지 
 	public static boolean solution(String[] name_list) {

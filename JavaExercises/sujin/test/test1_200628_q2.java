@@ -1,9 +1,9 @@
-package etc;
+package test;
 
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
-public class etc_200628_codingtest2 {
+public class test1_200628_q2 {
 	
 	public static void main(String[] args) {
 		// 입력 받음  

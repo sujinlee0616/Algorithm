@@ -1,8 +1,8 @@
-package etc;
+package test;
 
 import java.util.Stack;
 
-public class test2_1 {
+public class test2_200704_q2_1 {
 
 	
 	// 배열A를 집합A로 만든다

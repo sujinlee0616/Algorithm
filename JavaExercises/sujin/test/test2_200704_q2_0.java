@@ -1,8 +1,8 @@
-package etc;
+package test;
 
 import java.util.Stack;
 
-public class test2 {
+public class test2_200704_q2_0 {
 	
 	public static int[] solution(int[] arrayA, int[] arrayB) {
 		int[] answer= {number(arrayA), number(arrayB), number(sum(arrayA, arrayB)), number(complement(arrayA, arrayB)), number(intersect(arrayA, arrayB))};

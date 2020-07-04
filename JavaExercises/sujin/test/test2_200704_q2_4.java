@@ -1,8 +1,8 @@
-package etc;
+package test;
 
 import java.util.HashSet;
 
-public class test2_4 {
+public class test2_200704_q2_4 {
 	
 	public int[] solution(int[] arrayA, int[] arrayB) {
 		int[] answer= {};

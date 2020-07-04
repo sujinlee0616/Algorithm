@@ -1,6 +1,6 @@
-package etc;
+package test;
 
-public class etc_200629_codingtest3 {
+public class test1_200629_q3 {
 
 	// 스택 문제 - 스택 안 쓰면 시간초과됨! ^^!!!
 	// 난 스택 안 썼는데 !!!! 
