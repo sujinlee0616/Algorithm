@@ -1,5 +1,5 @@
 package hyuk.boj;
-
+//내아이디 기억이안나
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
