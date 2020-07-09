@@ -105,7 +105,7 @@ public class boj_q1629_multiply {
 		}
 		*/ 
 		
-		// 틀렸다고 나옴  ===> Why? ㅠㅠ 
+		// 틀렸다고 나옴  ===> Why? ㅠㅠ ==> 넘 커서 그럼. 
 		/* 
 		static long pow(int a,int b,int c) {
 			if(b==0) {

@@ -2,7 +2,7 @@ package boj;
 
 import java.util.Scanner;
 
-public class q11650_3 {
+public class boj_q11650_3 {
 
 	// 완료. 약 2시간 걸린 듯. 
 	// 병합정렬로 y좌표 먼저 정렬한 후 x좌표 정렬하는 방식으로 풀어보겠음.
