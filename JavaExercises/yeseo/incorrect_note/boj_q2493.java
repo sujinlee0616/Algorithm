@@ -1,4 +1,4 @@
-package boj;
+package incorrect_note;
 
 import java.util.Scanner;
 import java.util.Stack;
@@ -12,6 +12,7 @@ public class boj_q2493 {
 	public static void solution(int []input)
 	{
 		Stack<Integer> s=new Stack<>();
+		
 		int []res=new int[input.length];
 		for(int i=0;i<input.length;i++) {
 			s.push(input[i]);
@@ -21,20 +22,32 @@ public class boj_q2493 {
 		for(int j=0;j<input.length;j++) {
 			
 			if(j==0)
+			{
 				res[j]=0;  //앞에 검색할 것이 없음
+			}else {
 			
 			for(int i=j;i<input.length;i++) {
 				
 				if(s.peek()<input[j])	
-				{	s.pop();
+				{	
+					s.pop();
 				}else if(input[j]==s.peek())
-				{	continue;
+				{	
+					continue;
 				}else
-				{	s.push(s.peek());
+				{	
+					s.push(s.peek());
 				}	
-				System.out.println(j+"("+s.get(j)+")");
-			} 
+				
+				res[j]=s.peek();
+			 }
+			
+			}
+			
+			System.out.println(j+"("+res[j]+")"); //? 왜 9만 출력...
 		}
+		
+
 	}
 	public static void main(String[] args) {
 		Scanner scan=new Scanner(System.in);
