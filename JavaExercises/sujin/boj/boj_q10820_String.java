@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.StringTokenizer;
 
 // 소문자, 대문자, 숫자, 공백의 개수를 공백으로 구분해 출력
-public class boj_q10820 {
+public class boj_q10820_String {
 	
 	public static void main(String[] args) {
 		

@@ -2,7 +2,7 @@ package boj;
 
 import java.util.Scanner;
 
-public class boj_q11650 {
+public class boj_q11650_1 {
 	
 	// 잘못 풀었음. 제대로 푼건 q11650_3 임. 
 	// 일단 x좌표는 퀵정렬 쓰면 됨 . 
