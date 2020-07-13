@@ -141,7 +141,7 @@ class DoublyLinkedList {
 			if(tail == head) {
 				head = null;
 				tail = null;
-			} else {
+			} else { // 
 				Node tmp = tail;
 				tail.before.after = null;
 				tail = tail.before;
