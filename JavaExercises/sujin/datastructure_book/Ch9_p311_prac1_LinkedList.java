@@ -2,7 +2,8 @@ package datastructure_book;
 
 import java.util.Comparator;
 
-// 포인터로 연결 리스트 만들기 
+// [포인터로 연결 리스트 만들기]
+// - 노드 형이 클래스 Node<E>형인 연결 리스트를 클래스 LinkedList<E>로 구현해보자. 
 public class Ch9_p311_prac1_LinkedList<E> {
 	
 	// 노드 
