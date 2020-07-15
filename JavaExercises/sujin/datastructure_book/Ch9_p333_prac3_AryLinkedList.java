@@ -6,7 +6,7 @@ import java.util.Comparator;
 // - 각 노드를 배열 요소에 저장하고 그 요소를 이용해서 연결리스트를 구현해보자. 
 // - 커서: 다음 노드가 들어있는 요소의 인덱스 값 
 // - 꼬리노드의 커서: -1 (배열의 인덱스로 불가능한 값이니까) 
-public class Ch9_p333_prac3_LinkedList2<E> {
+public class Ch9_p333_prac3_AryLinkedList<E> {
 	
 	class Node<E>{
 		private E data; // 데이터 
@@ -29,7 +29,7 @@ public class Ch9_p333_prac3_LinkedList2<E> {
 	private static final int NULL = -1; // 다음 노드 없음 / 리스트가 가득 참 
 	
 	// 생성자 
-	public Ch9_p333_prac3_LinkedList2(int capacity) {
+	public Ch9_p333_prac3_AryLinkedList(int capacity) {
 		head = crnt = max = deleted = NULL;
 		try {
 			n = new Node[capacity];
