@@ -2,7 +2,7 @@ package presentation;
 
 import java.util.Scanner;
 
-public class day4_Recursion {
+public class Recursion {
 
 /*
  
