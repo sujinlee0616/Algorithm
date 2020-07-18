@@ -1,2 +1,2 @@
 # Java
-Projects and practicing examples using Java
+Algorithm and practicing examples using Java
