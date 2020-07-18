@@ -9,7 +9,7 @@ public class q15650_NandM2 {
 	private static int M;
 	private static int[] ans = new int[10];
 	private static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-
+	//
 	public static void main(String[] args) {
 
 		Scanner scn = new Scanner(System.in);
