@@ -3,37 +3,47 @@ package boj;
 import java.io.*;
 
 // 푸는 중 
-public class boj_q15649_NandM {
+public class boj_q15649_NandM1 {
 	
 	private static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		int N = Integer.parseInt(br.readLine());
+		int N = br.read();
 		System.out.println("N="+N);
-		int M = Integer.parseInt(br.readLine());
-		System.out.println("M="+N);
-		boolean[] visited=new boolean[N];
+		int M = br.read();
+		System.out.println("M="+M);
+		
+		//boolean[] visited=new boolean[N];
 		int count=0;
-		recursion(N,M, visited,count);
 	}
 	
-	public static void recursion(int N, int M, boolean[] visited, int count) {
-		
-		while(count<M) {
-			for(int i=0;i<N;i++) {
-				if(visited[i] == true) continue;
-				else {
-					visited[i] = true;
-					recursion(N,M,visited,count);
-					System.out.print((i+1)+" ");
-				}
-				visited[i] = false;
-			}
-			count++;
-		}
-			
-	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+//	public static void recursion(int N, int M, boolean[] visited, int count) {
+//		
+//		while(count<M) {
+//			for(int i=0;i<N;i++) {
+//				if(visited[i] == true) continue;
+//				else {
+//					visited[i] = true;
+//					recursion(N,M,visited,count);
+//					System.out.print((i+1)+" ");
+//				}
+//				visited[i] = false;
+//			}
+//			count++;
+//		}
+//			
+//	}
 	
 	
 	
