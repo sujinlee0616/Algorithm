@@ -1,4 +1,4 @@
-package boj;
+package incorrect_note;
 
 import java.util.Scanner;
 
@@ -25,13 +25,14 @@ import java.util.Scanner;
  * Pre : 1 2 4 5 3
  * Post : 4 5 2 3 1 
  * 
- */
-	class Node {
+*/
+
+ /* class Node {
 		int data;
 		Node left;
 		Node right;
 	}
-	
+
    class Tree{
 		public Node root;
 
@@ -171,6 +172,8 @@ public class boj_q1068 {
 
 	
 		Tree t=new Tree();
+		*/
+
 		/*
 		 *  	 1           0
 		 * 	   2   3       1   2   
@@ -189,7 +192,7 @@ public class boj_q1068 {
 		
 		*/
 		
-
+/*
 		Node n3=t.addNode(null, 3, null);
 		Node n4=t.addNode(null, 4, null);
 		Node n2=t.addNode(null,2,null);
@@ -215,3 +218,4 @@ public class boj_q1068 {
 	}
 	
 }
+*/
