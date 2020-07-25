@@ -21,6 +21,10 @@ import java.util.StringTokenizer;
 //  - visited[i]:i가 list에 들어있는지를 체크하는 배열 
 //  - list[i]: 결과배열 
 
+// background 지식) 
+// 1. 클래스내의 어떠한 메소드가 실행되고 해당 메소드 실행에 따라 나온 값을 호출한 곳에서 돌려받고자 할때
+// 2. 해당 메소드 실행중 특정 조건에 따라 해당 메소드의 진행을 멈추고 빠져나올때
+
 public class boj_q15649_NandM1 {
 	
 	static int m,n; // N과 M을 입력받는다.
@@ -51,7 +55,7 @@ public class boj_q15649_NandM1 {
 			System.out.println("list["+k+"]="+i);
 			dfs(k+1); // 3) k+1번째 결과배열을 정하기 위해 dfs(k+1)을 수행 
 			System.out.println("======== dfs("+(k+1)+") 호출 ========");
-			visited[i]=0; // 4) 방문처리를 해제한다. <== why? 
+			//visited[i]=0; // 4) 방문처리를 해제한다. <== why? 
 			System.out.println("visited["+i+"]=0;");
 		}
 	}

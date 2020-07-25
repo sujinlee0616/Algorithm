@@ -8,8 +8,8 @@ import java.util.Scanner;
 //2.코드출처 - https://fbtmdwhd33.tistory.com/36
 
 public class boj_q15650_NandM2 {
+	
 	static int m,n; // M과 N변수
-
 	static int list[],check[]; // 결과를 저장 할 list배열과 방문 여부를 체크 할 방문 배열
 	
 	static void dfs(int idx,int cnt) { // DFS메소드, 반복문의 시작부분을 변경해줘야 하므로 인자를 하나 더 추가한다.

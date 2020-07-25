@@ -5,8 +5,8 @@ import java.util.*;
 
 // 자력으로 못 풀었음 ㅠㅠ 
 public class boj_q15651_NandM3 {
+	
 	static int m,n;
-
 	static int list[]; // 수열을 저장 할 배열
     //BufferedWriter 객체, static선언을 한 이유는 DFS메소드 내에서 출력을 하기 때문이다.
 	static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out)); 
