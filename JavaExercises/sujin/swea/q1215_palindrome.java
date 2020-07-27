@@ -2,7 +2,7 @@ package swea;
 
 import java.util.Scanner;
 
-// - 소요시간: 30분. 다시 풀어야함. 
+// - 소요시간: 40분  
 public class q1215_palindrome {
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
@@ -27,7 +27,7 @@ public class q1215_palindrome {
 		// 입력 시에 n<=8 이라고 하자. 
 		
 		// 1. 행 검사
-		for(int i=0;i<n;i++) { 
+		for(int i=0;i<8;i++) { 
 			// i번째 행 검사 
 			//System.out.println(i+"번째 행 ");
 			for(int j=0;j<=8-n;j++) { 
@@ -46,9 +46,9 @@ public class q1215_palindrome {
 		}
 		
 		// 2. 열 검사
-		for (int i=0;i<n;i++) {
+		for (int i=0;i<8;i++) {
 			// i번째 열 검사
-			// System.out.println(i+"번째 열 ");
+			//System.out.println(i+"번째 열 ");
 			for (int j=0;j<=8-n;j++) {
 				// y=j일때 검사
 				boolean isPal = true;
@@ -59,7 +59,7 @@ public class q1215_palindrome {
 				}
 				if(isPal==true) {
 					res++;
-					// System.out.println("y="+j);
+					//System.out.println("y="+j);
 				}
 			}
 		}
