@@ -16,16 +16,22 @@ import static java.util.stream.Collectors.toList;
 
 class Result2 {
 
-    /*
-     * Complete the 'countDuplicate' function below.
-     *
-     * The function is expected to return an INTEGER.
-     * The function accepts INTEGER_ARRAY numbers as parameter.
-     */
-
     public static int countDuplicate(List<Integer> numbers) {
     // Write your code here
         int res=0;
+        int[] count=new int[1001];
+        
+        for(int i=0;i<numbers.size();i++) {
+        	for(int j=0;j<1001;j++) {
+        		if(numbers.get(i)==count[j])
+            		count[j]++;
+        	}
+        	
+        }
+        for(int i=0;i<1001;i++) {
+        	if(count[i]>=2)
+        		res++;
+        }
 
         return res;
     }
