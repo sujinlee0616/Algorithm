@@ -70,7 +70,6 @@ public class boj_q1260_dfs_bfs {
 			if(!visited[y]) { // y점을 방문한적 없다면 
 				dfs(y); // dfs해라  - 재귀로..... 계속계속... 탐색... 
 			} 
-				
 		}
 	}
 	
