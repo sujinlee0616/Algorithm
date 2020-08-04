@@ -1,7 +1,7 @@
 package hyuk.boj;
 
 import java.util.Scanner;
-//아하
+//아하!!
 public class b1629_Multiple {
 	public static void main(String[] args) {
 		Scanner scn = new Scanner(System.in);
