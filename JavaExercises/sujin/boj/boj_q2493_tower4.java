@@ -8,6 +8,7 @@ import java.util.Stack;
 
 // 다른 방법으로 탑 풀어보기 
 // - test case는 맞지만 시간초과남. 
+// - n이 max 50만이라서... for문 두 번 돌리는 이 방법은 안 됨. 
 
 public class boj_q2493_tower4 {
 	
