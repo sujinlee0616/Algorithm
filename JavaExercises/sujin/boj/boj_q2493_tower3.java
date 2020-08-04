@@ -58,7 +58,7 @@ public class boj_q2493_tower3 {
 		}
 		
 		// Top 클래스로 Stack을 만들자 
-		Stack<Top> stk = new Stack<Top>();
+		Stack<Top> stk = new Stack<Top>(); // <== ★★★ Generic에 Integer 같은게 아니라 class가 들어갔음!!
 		
 		for(int i=1; i<=n; i++) {
 			System.out.println("========== i="+i+"==========");
@@ -96,7 +96,7 @@ public class boj_q2493_tower3 {
 		public int index;
 		public int height;
 
-		Top(int i, int v) {
+		Top(int i, int v) { // <== ★★★
 			index = i;
 			height = v;
 		}
