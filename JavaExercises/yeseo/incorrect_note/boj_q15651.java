@@ -1,7 +1,7 @@
-package boj;
+package incorrect_note;
 
 import java.util.Scanner;
-
+//! 틀린풀이 !BufferedReader 사용 !  
 public class boj_q15651 {
 	 	static int N;
 	    static int M;
