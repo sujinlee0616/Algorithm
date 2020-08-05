@@ -16,17 +16,6 @@ import static java.util.stream.Collectors.toList;
 
 class Result1 {
 
-    /*
-     * Complete the 'priceCheck' function below.
-     *
-     * The function is expected to return an INTEGER.
-     * The function accepts following parameters:
-     *  1. STRING_ARRAY products
-     *  2. FLOAT_ARRAY productPrices
-     *  3. STRING_ARRAY productSold
-     *  4. FLOAT_ARRAY soldPrice
-     */
-
     public static int priceCheck(List<String> products, List<Float> productPrices, List<String> productSold, List<Float> soldPrice) {
         int res=0;
         int s=products.size();

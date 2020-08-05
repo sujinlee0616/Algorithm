@@ -4,7 +4,10 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class boj_q1026_treasure {
+// [풀이1] 선택정렬 
+// - 선택정렬로 내림차순/오름차순 정렬 
+
+public class boj_q1026_treasure1_SelectionSort {
 	
 	public static int solution(int[] arr1, int[] arr2) {
 		
@@ -27,12 +30,12 @@ public class boj_q1026_treasure {
 	
 	public static void selectionSort(int[] arr, String s) {
 		
-		if(s.contentEquals("DESC")) { // 내림차순 
+		if(s.equals("DESC")) { // 내림차순 
 			for(int i=0;i<arr.length-1;i++) {
-				int min=i;
+				int min=i; 
 				for(int j=i+1;j<arr.length;j++)
-					if(arr[j]>arr[min])
-						min=j;
+					if(arr[j]>arr[min]) 
+						min=j; // 
 				swap(arr,i,min);
 			}
 		}
