@@ -2,7 +2,7 @@ package datastructure_book;
 
 import java.util.Scanner;
 
-import javafx.scene.transform.Scale;
+//import javafx.scene.transform.Scale;
 
 public class Ch2_p91_practice14 {
 	
