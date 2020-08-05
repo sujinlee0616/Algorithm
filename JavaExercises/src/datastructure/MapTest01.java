@@ -1,6 +1,7 @@
 package datastructure;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
@@ -19,10 +20,20 @@ public class MapTest01 {
 		System.out.println(map.get("notUsed"));
 		System.out.println("--------------------");
 		print(map);
+		System.out.println("====================");
+		printByIterator(map);
 	}
 	private static void print(Map<String, Integer> map) {
 		Set<Map.Entry<String, Integer>> entries = map.entrySet();
 		for(Map.Entry<String, Integer> entry : entries) {
+			System.out.println("{" + entry.getKey() + " : " + entry.getValue() + "}");
+		}
+	}
+	private static void printByIterator(Map<String, Integer> map) {
+		Set<Map.Entry<String, Integer>> entries = map.entrySet();
+		Iterator<Map.Entry<String, Integer>> iter = entries.iterator();
+		while(iter.hasNext()) {
+			Map.Entry<String, Integer> entry = iter.next();
 			System.out.println("{" + entry.getKey() + " : " + entry.getValue() + "}");
 		}
 	}
