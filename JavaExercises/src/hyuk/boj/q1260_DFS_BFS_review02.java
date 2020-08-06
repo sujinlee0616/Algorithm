@@ -7,59 +7,71 @@ import java.util.List;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class q1260_DFS_BFS {
+public class q1260_DFS_BFS_review02 {
 	
+	private static int N,M,V;
+	private static List<Integer>[] arr;
 	private static int[] visited;
 	
 	public static void main(String[] args) {
-		new q1260_DFS_BFS().service();
+		new q1260_DFS_BFS_review02().service();
 	}
 	private void service() {
 		Scanner scn = new Scanner(System.in);
 		
-		int N = scn.nextInt();
-		int M = scn.nextInt();
-		int V = scn.nextInt();
-		List<Integer>[] nodes = new List[N+1];
+		N = scn.nextInt();
+		M = scn.nextInt();
+		V = scn.nextInt();
+		arr =  new List[N+1];
 		for(int i = 1; i <= N; i++) {
-			nodes[i] = new ArrayList<Integer>();
+			arr[i] = new ArrayList<Integer>();
 		}
 		for(int i = 0; i < M; i++) {
 			int a = scn.nextInt();
 			int b = scn.nextInt();
-			nodes[a].add(b);
-			nodes[b].add(a);
+			arr[a].add(b);
+			arr[b].add(a);
 		}
+		//정렬
 		for(int i = 1; i <= N; i++) {
-			Collections.sort(nodes[i]);
+			Collections.sort(arr[i]);
 		}
+		//dfs
 		visited = new int[N+1];
-		dfs(nodes, V);
+		dfs(V);
 		System.out.println();
 		visited = new int[N+1];
-		bfs(nodes, V);
+		bfs();
 		
 		scn.close();
 	}
-	private void dfs(List<Integer>[] list, int pos) {
-		System.out.print(pos + " ");
-		visited[pos] = 1;
-		List<Integer> childs = list[pos];
+	private void dfs(int node) {
+		
+		if(node != V) {
+			System.out.print(" ");
+		}
+		visited[node] = 1;
+		System.out.print(node);
+		
+		List<Integer> childs = arr[node];
 		int len = childs.size();
 		for(int i = 0; i < len; i++) {
 			int child = childs.get(i);
 			if(visited[child] == 1) continue;
-			dfs(list, child);
+			dfs(child);
 		}
 	}
-	private void bfs(List<Integer>[] list, int pos) {
+	private void bfs() {
 		Queue<Integer> que = new LinkedList<Integer>();
-		que.offer(pos);
-		visited[pos] = 1;
+		que.offer(V);
+		visited[V] = 1;
 		while(que.size() != 0) {
 			int node = que.poll();
-			System.out.print(node + " ");
-			List<Integer> childs = list[node];
+			if(node != V) {
+				System.out.print(" ");
+			}
+			System.out.print(node);
+			List<Integer> childs = arr[node];
 			int len = childs.size();
 			for(int i = 0; i < len; i++) {
 				int child = childs.get(i);

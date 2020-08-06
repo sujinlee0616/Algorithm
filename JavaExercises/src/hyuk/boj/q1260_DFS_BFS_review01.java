@@ -7,12 +7,9 @@ import java.util.List;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class q1260_DFS_BFS {
-	
-	private static int[] visited;
-	
+public class q1260_DFS_BFS_review01 {
 	public static void main(String[] args) {
-		new q1260_DFS_BFS().service();
+		new q1260_DFS_BFS_review01().service();
 	}
 	private void service() {
 		Scanner scn = new Scanner(System.in);
@@ -20,46 +17,49 @@ public class q1260_DFS_BFS {
 		int N = scn.nextInt();
 		int M = scn.nextInt();
 		int V = scn.nextInt();
-		List<Integer>[] nodes = new List[N+1];
+		
+		List<Integer>[] input = new List[N+1];
 		for(int i = 1; i <= N; i++) {
-			nodes[i] = new ArrayList<Integer>();
+			input[i] = new ArrayList<Integer>();
 		}
 		for(int i = 0; i < M; i++) {
-			int a = scn.nextInt();
-			int b = scn.nextInt();
-			nodes[a].add(b);
-			nodes[b].add(a);
+			int from = scn.nextInt();
+			int to = scn.nextInt();
+			input[from].add(to);
+			input[to].add(from);
 		}
+		
 		for(int i = 1; i <= N; i++) {
-			Collections.sort(nodes[i]);
+			Collections.sort(input[i]);
 		}
-		visited = new int[N+1];
-		dfs(nodes, V);
+		
+		int[] visited = new int[N+1];
+		dfs(N,M,input,visited,V);
 		System.out.println();
 		visited = new int[N+1];
-		bfs(nodes, V);
-		
+		bfs(N,M,input,visited,V);
 		scn.close();
 	}
-	private void dfs(List<Integer>[] list, int pos) {
-		System.out.print(pos + " ");
-		visited[pos] = 1;
-		List<Integer> childs = list[pos];
+	private void dfs(int N, int M, List[] input, int[] visited,int v) {
+		System.out.print(v + " ");
+		visited[v] = 1;
+		List<Integer> childs = input[v];
 		int len = childs.size();
 		for(int i = 0; i < len; i++) {
 			int child = childs.get(i);
 			if(visited[child] == 1) continue;
-			dfs(list, child);
+			visited[child] = 1;
+			dfs(N,M,input,visited,child);
 		}
 	}
-	private void bfs(List<Integer>[] list, int pos) {
+	private void bfs(int N, int M, List[] input, int[] visited, int v) {
 		Queue<Integer> que = new LinkedList<Integer>();
-		que.offer(pos);
-		visited[pos] = 1;
+		que.offer(v);
+		visited[v] = 1;
 		while(que.size() != 0) {
 			int node = que.poll();
 			System.out.print(node + " ");
-			List<Integer> childs = list[node];
+			List<Integer> childs = input[node];
 			int len = childs.size();
 			for(int i = 0; i < len; i++) {
 				int child = childs.get(i);

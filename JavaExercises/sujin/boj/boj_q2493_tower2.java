@@ -12,7 +12,6 @@ public class boj_q2493_tower2 {
 	// 1) 스택에 마지막으로 쌓인 높이 > 현재 탑의 높이 
 	// 2) 스택에 마지막으로 쌓인 높이 < 현재 탑의 높이 													
 	// idea2. 높이를 비교하지만 index+1값을 반환 ==> index와 height 저장하는 두 값이 있어야. 
-	// ㅠㅠ 담에 이 문제 다시 풀어보자...
 	
 	public static void main(String[] args) throws IOException{
 		

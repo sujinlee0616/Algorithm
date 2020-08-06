@@ -7,6 +7,11 @@ import java.util.Stack;
  * 6, 9, 5, 7, 4 -->pop하면 4부터 out 됨.
  * index()
  */
+
+
+
+
+
 public class boj_q2493 {
 
 	public static void solution(int []input)
