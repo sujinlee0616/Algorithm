@@ -1,4 +1,5 @@
-package SWEA;
+package swea;
+
 import java.util.Scanner;
  
 public class SWEA_1861_another_answer {
