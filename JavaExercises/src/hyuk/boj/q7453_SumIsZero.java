@@ -1,6 +1,7 @@
 package hyuk.boj;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
@@ -9,7 +10,7 @@ public class q7453_SumIsZero {
 	
 	private static int[][] totalArr;
 	private static int N;
-	private static List<Integer> arrA, arrB;
+	private static long[] arrA, arrB;
 	
 	public static void main(String[] args) {
 		new q7453_SumIsZero().service();
@@ -26,42 +27,44 @@ public class q7453_SumIsZero {
 		}
 		
 		//1. arrA만들기
-		arrA = new ArrayList<Integer>();
+		arrA = new long[N*N];
+		int index = 0;
 		for(int i = 0; i < N; i++) {
 			for(int j = 0; j < N; j++) {
-				int sum = totalArr[0][i] + totalArr[1][j];
-				arrA.add(sum);
+				long sum = totalArr[0][i] + totalArr[1][j];
+				arrA[index++] = sum;
 			}
 		}
-		Collections.sort(arrA);
+		Arrays.sort(arrA);
 		//2. arrB만들기
-		arrB = new ArrayList<Integer>();
+		arrB = new long[N*N];
+		index = 0;
 		for(int i = 0; i < N; i++) {
 			for(int j = 0; j < N; j++) {
 				int sum = totalArr[2][i] + totalArr[3][j];
-				arrB.add(-1 * sum);
+				arrB[index++] = sum * -1;
 			}
 		}
-		Collections.sort(arrB);
+		Arrays.sort(arrB);
 		// 이진탐색
-		int cnt = 0;
-		int len = arrA.size();
+		long cnt = 0;
+		int len = arrA.length;
 		for(int i = 0; i < len; i++) {
-			int target = arrA.get(i);
-			int first = binarySearch(-1, len, target);
-			int second = binarySearch(-1, len, target+1);
+			long target = arrA[i];
+			long first = binarySearch(-1, len, target);
+			long second = binarySearch(-1, len, target+1);
 			cnt += (second - first);
 		}
 		System.out.println(cnt);
 		scn.close();
 	}
-	private int binarySearch(int start, int end, int target) {
-		int mid = (start + end) / 2;
+	private long binarySearch(long start, long end, long target) {
+		long mid = (start + end) / 2;
 		if(start + 1 >= end) {
 			return end;
 		}
 		
-		if(arrB.get(mid) < target) {
+		if(arrB[(int)mid] < target) {
 			return binarySearch(mid, end, target);
 		}else {
 			return binarySearch(start, mid, target);
