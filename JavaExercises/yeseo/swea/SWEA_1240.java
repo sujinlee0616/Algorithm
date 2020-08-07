@@ -1,4 +1,4 @@
-package SWEA;
+package swea;
 
 public class SWEA_1240 {
 /*
