@@ -12,18 +12,12 @@ public class boj_q1181 {
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
 		N=sc.nextInt();
-		//ArrayList<words> wList = new ArrayList<words>();
 		String[] letters = new String[N];
 		
 		for(int i=0;i<N;i++) {
-			//String s=sc.next();
-			//wList.add(new words(s, s.length()));
-			//System.out.println(wList.get(i).word+", "+wList.get(i).len);
 			letters[i] = sc.next();
-			//System.out.println(letters[i]);
 		}
 		
-		//sort(wList);
 		sort(letters);
 	}
 	
@@ -66,16 +60,5 @@ public class boj_q1181 {
 		arr[idx1]=arr[idx2];
 		arr[idx2]=t;
 	}
-	
-	static class words {
-		String word;
-		int len;
-		words(String s,int i){
-			word = s;
-			len = i;
-		}
-	}
-	
-	
 	
 }
