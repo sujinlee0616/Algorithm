@@ -91,7 +91,7 @@ public class boj_2667 {
      }
 	
 		/*
-		
+		재혁스 코드 
 		//원소 중에 1과 만나는 애들은 카운팅하는 메소드 
 		for(int i=0;i<N;i++) {
 			String line=scan.next();
