@@ -1,4 +1,4 @@
-package boj;
+package incorrect_note;
 
 
 //해설 
