@@ -5,6 +5,7 @@ import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
 
+// - 이거 다시 풀어야함. 풀다 말았음. 
 // - 구간 [A,B] : A~B 모든 정수가 있는 구간. (단, A,B는 양수. B>A) 
 // - 구간 [A,B]가 unlucky가 되기 위해선 구간에 속한 모든 정수가 lucky set에 없어야함 
 
