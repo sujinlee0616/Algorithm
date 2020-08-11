@@ -3,9 +3,11 @@ import java.io.*;
 import java.util.*;
 
 //단어 정렬 set Version
+
 public class boj_1181_setVer {
 	
 	    public static void main(String args[]) throws Exception {
+	    	//Scanner 
 	        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	        int N = Integer.parseInt(br.readLine());
 	        
@@ -18,8 +20,7 @@ public class boj_1181_setVer {
 	        // List 변환
 	        ArrayList<String> list = new ArrayList<String>(set);
 	 
-	        // Comparator 클래스를 통하여 custom 정렬
-	        // 길이에 따라서 먼저 정렬하고 길이가 같으면 사전순으로 정렬
+	    
 	        Collections.sort(list, new Comparator<String>() {
 	            public int compare(String v1, String v2) {
 	                if(v1.length() > v2.length()) 
@@ -31,7 +32,7 @@ public class boj_1181_setVer {
 	            }
 	        });
 	 
-	        for(String s : list) 
+	        for(String s : list) //for each
 	            System.out.println(s);
 	    }
 	}

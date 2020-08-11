@@ -12,9 +12,9 @@ package boj;
 	public class boj_1181 {
 	/*
 	 단어정렬
-	 1) tescase를 배열로 받되 중복은 제거 
-	 2) Comparator로 길이가 짧은것 선순위 , 긴것 후순위, 길이가 같다면, 알파벳순 정
-	 3) Collections.sort로 알파벳 순 정
+	 1) 중복 제거 
+	 2) Comparator로 길이가 짧은것 , 후순위 = 긴것  길이가 같다면  / 알파벳순 정렬 
+	 3) Collections.sort
 
 	 */
 
@@ -23,10 +23,12 @@ package boj;
 			int T=scn.nextInt();
 			String input[]=new String[T];
 			List<String> list=new ArrayList<String>();
+			
+			
 			for(int i=0;i<T;i++) {
 				input[i]=scn.next();
-				if(!list.contains(input[i])) //리스트에 이미 그 단어가 없다면 
-				list.add(input[i]); // 추가해라
+				if(!list.contains(input[i]))  
+				list.add(input[i]); 
 			}
 			
 			//사용자 정의 Comparator 만들기 
@@ -37,7 +39,7 @@ package boj;
 						return 1;
 					else if(a.length()==b.length()) //길이가 같다면 알파벳 순서로 출력
 						return a.compareTo(b); //a,b를 메소드에 넣고 돌린 후 -1 
-					return -1;
+					return -1; //종료 
 					
 				}
 				
