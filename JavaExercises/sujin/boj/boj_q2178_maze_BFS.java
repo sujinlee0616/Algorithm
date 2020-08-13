@@ -43,7 +43,7 @@ public class boj_q2178_maze_BFS {
 		for(int i=0;i<n;i++) {
 			for(int j=0;j<m;j++) {
 				map[i][j] = s[i].charAt(j)-'0';
-				//System.out.print("arr["+i+"]["+j+"]="+arr[i][j]+" ");
+				//System.out.print(map[i][j]+" ");
 			}
 			//System.out.println();
 		}

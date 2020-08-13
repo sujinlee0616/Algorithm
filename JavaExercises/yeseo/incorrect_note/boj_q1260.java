@@ -1,4 +1,4 @@
-package boj;
+package incorrect_note;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
