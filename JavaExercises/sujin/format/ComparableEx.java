@@ -33,14 +33,14 @@ public class ComparableEx {
 		// int compareTo(T o) : 해당 객체와 전달된 객체의 순서를 비교함.
 		
 		// ex1) 출간년도 오름차순  
-		System.out.println(book01.compareTo(book02)); // ex1) 2001 > 1923 ==> return 1  
-		System.out.println(book02.compareTo(book03)); // ex1) 1923 < 2015 ==> return -1  
-		System.out.println(book03.compareTo(book04)); // ex1) 1923 == 2015 ==> return 0  
+		//System.out.println(book01.compareTo(book02)); // ex1) 2001 > 1923 ==> return 1  
+		//System.out.println(book02.compareTo(book03)); // ex1) 1923 < 2015 ==> return -1  
+		//System.out.println(book03.compareTo(book04)); // ex1) 1923 == 2015 ==> return 0  
 		
 		// ex2) 책 제목 사전 순 
-		System.out.println(book01.getTitle().compareTo(book02.getTitle())); // ex3) 가가가 < 나나나 ==> return -1176  ==> 자리 바꾸지X
-		System.out.println(book03.getTitle().compareTo(book02.getTitle())); // ex3) 다다다 > 나나나 ==> return 588 ==> 자리 바꾸지O
-		System.out.println(book04.getTitle().compareTo(book04.getTitle())); // ex3) 라라라 == 라라라 ==> return 0 ==> 자리 바꾸지X
+		//System.out.println(book01.getTitle().compareTo(book02.getTitle())); // ex3) 가가가 < 나나나 ==> return -1176  ==> 자리 바꾸지X
+		//System.out.println(book03.getTitle().compareTo(book02.getTitle())); // ex3) 다다다 > 나나나 ==> return 588 ==> 자리 바꾸지O
+		//System.out.println(book04.getTitle().compareTo(book04.getTitle())); // ex3) 라라라 == 라라라 ==> return 0 ==> 자리 바꾸지X
 	}
 }
 
@@ -74,6 +74,14 @@ class Book implements Comparable<Book> {
 		this.company = c;
 		this.year = d;
 	}
+    
+    public String getTitle() {
+		return title;
+	}
+    
+    public int getYear() {
+		return year;
+	}
 
     // ex1) 출판년도(year) 오름차순 
     /* 
@@ -82,17 +90,14 @@ class Book implements Comparable<Book> {
             return 0; 
         } else if(this.year < obj.year) { // 현재 객체 < 파라미터로 넘어온 객체 ==> 음수 리턴  ==> 자리 바뀌지 X ==> 오름차순 
             return -1; 
-        } else { // 현재 객체 > 파라미터로 넘어온 객체 ==> 양수 리턴 ==> 자리 바뀌지 O ==> 오름차순 ==> 자리 바뀌지 O ==> 오름차순 
+        } else { // 현재 객체 > 파라미터로 넘어온 객체 ==> 양수 리턴 ==> 자리 바뀌지 O ==> 오름차순  
             return 1;
         }
     }
     */
     
     // ex2) 책 제목 사전 순 
-    public String getTitle() {
-		return title;
-	}
-    /* 
+    /*
 	public int compareTo(Book o) {
         int res = this.getTitle().compareTo(o.getTitle());
         return res;
@@ -100,9 +105,6 @@ class Book implements Comparable<Book> {
     */
 
 	// ex3) 책 제목 사전순으로. 책 제목이 같을 경우, 출간년도 오름차순으로. <== 보통 이렇게 정렬 조건 추가하는 경우에는 Comparator 더 많이 쓰는듯...
-	public int getYear() {
-		return year;
-	}
 	public int compareTo(Book o) {
         int res = this.getTitle().compareTo(o.getTitle());
         if(res==0) 
@@ -110,4 +112,5 @@ class Book implements Comparable<Book> {
         	// 현재 객체 출판년도 > 파라미터로 넘어온 객체 출판년도 ==> 양수 리턴 ==> 자리 바뀌지 O ==> 오름차순 
         return res;
     }
+    
 }

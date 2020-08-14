@@ -22,15 +22,15 @@ public class ComparatorEx {
 		list.add(new Book2("마마마", "이작가", "C출판사", 2001));
 		list.add(new Book2("하하하", "이작가", "C출판사", 2001));
 		list.add(new Book2("나나나", "김씨", "B출판사", 1923));
-		list.add(new Book2("죽은 자의 집 청소", "김완", "김영사", 2020));
-		list.add(new Book2("2050 거주불능 지구", "데이비드 월러스 웰즈", "추수밭", 2020));
-		list.add(new Book2("1984", "조지 오웰", "민음사", 2007));
-		list.add(new Book2("침묵의 봄", "레이첼 카슨", "에코리브르", 2011));
-		list.add(new Book2("라라라", "제레미 다이아몬드", "문학사상", 2005));
-		list.add(new Book2("마마마", "제레미 다이아몬드", "문학사상", 2000));
-		list.add(new Book2("불안", "알랭 드 보통", "은행나무", 2012));
-		list.add(new Book2("싯다르타", "헤르만 헤세", "민음사", 2002));
-		list.add(new Book2("호모데우스", "유발 하라리", "김영사", 2017));
+		//list.add(new Book2("죽은 자의 집 청소", "김완", "김영사", 2020));
+		//list.add(new Book2("2050 거주불능 지구", "데이비드 월러스 웰즈", "추수밭", 2020));
+		//list.add(new Book2("1984", "조지 오웰", "민음사", 2007));
+		//list.add(new Book2("침묵의 봄", "레이첼 카슨", "에코리브르", 2011));
+		//list.add(new Book2("라라라", "제레미 다이아몬드", "문학사상", 2005));
+		//list.add(new Book2("마마마", "제레미 다이아몬드", "문학사상", 2000));
+		//list.add(new Book2("불안", "알랭 드 보통", "은행나무", 2012));
+		//list.add(new Book2("싯다르타", "헤르만 헤세", "민음사", 2002));
+		//list.add(new Book2("호모데우스", "유발 하라리", "김영사", 2017));
 		
 		// ex1) 제목 사전 역순 
 		Collections.sort(list, new DescTitle());
