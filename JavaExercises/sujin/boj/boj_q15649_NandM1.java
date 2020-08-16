@@ -45,18 +45,18 @@ public class boj_q15649_NandM1 {
 		for(int i=1;i<=n;i++) { // 수의 범위는 1부터 N까지이다.
 			// System.out.println("=============== k="+k+", i="+i+"===============");
 			if(visited[i]==1) {
-				System.out.println("visited["+i+"]==1 ==> continue");
+				//System.out.println("visited["+i+"]==1 ==> continue");
 				continue; // 1. i가 이미 list에 들어가있으면 건너뛴다 
 			}
 			// 2. i가 list에 아직 없다면 (들어가있지 않다면) 
 			visited[i]=1; // 1) 방문처리 하고 
-			System.out.println("visited["+i+"]=1;");
+			//System.out.println("visited["+i+"]=1;");
 			list[k]=i; // 2) 결과배열의 k번째 원소에다가 집어넣는다 ==> 결과배열의 k번째까지 완성되었음 
-			System.out.println("list["+k+"]="+i);
+			//System.out.println("list["+k+"]="+i);
 			dfs(k+1); // 3) k+1번째 결과배열을 정하기 위해 dfs(k+1)을 수행 
-			System.out.println("======== dfs("+(k+1)+") 호출 ========");
-			//visited[i]=0; // 4) 방문처리를 해제한다. <== why? 
-			System.out.println("visited["+i+"]=0;");
+			//System.out.println("======== dfs("+(k+1)+") 호출 ========");
+			visited[i]=0; // 4) 방문처리를 해제한다. <== why? 
+			//System.out.println("visited["+i+"]=0;");
 		}
 	}
 	public static void main(String[] args) {

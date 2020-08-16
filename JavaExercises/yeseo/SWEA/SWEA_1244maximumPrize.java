@@ -1,4 +1,4 @@
-package SWEA;
+package swea;
 import java.util.*;
  
 public class SWEA_1244maximumPrize {

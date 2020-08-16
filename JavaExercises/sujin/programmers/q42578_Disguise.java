@@ -10,9 +10,10 @@ public class q42578_Disguise {
 	public static void main(String[] args) {
 		String[][] clothes = {{"yellow_hat", "headgear"}, 
 				{"blue_sunglasses", "eyewear"}, {"green_turban", "headgear"}};
+		System.out.println(solution(clothes));
 	}
 	
-	public int solution(String[][] clothes) {
+	public static int solution(String[][] clothes) {
 
 		HashMap<String,Integer> map = new HashMap<String, Integer>(); 
         // Key : 옷의 종류, Value : 해당 옷 종류의 수 
