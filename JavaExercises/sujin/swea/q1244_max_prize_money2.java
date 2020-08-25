@@ -3,7 +3,9 @@ package swea;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-// 참고자료) 
+// [정답] - 해결방법1 
+// - 경우의 수를 일일히 따져가며 나눴음. 
+// [참고자료]
 // - 깊이탐색(DFS): https://gmlwjd9405.github.io/2018/08/14/algorithm-dfs.html
 // - 정답 코드: https://dheldh77.tistory.com/194 
 

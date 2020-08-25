@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-// [이진탐색 문제]
+// [이진탐색 문제] ★★★
 public class boj_q2110_Router {
 
 	public static void main(String[] args) throws NumberFormatException, IOException{
