@@ -16,7 +16,7 @@ public class boj_q15650 {
         dfs(0, -1); 
     }
 
-    //이전보다 커지는 시점에서 for문빠져나오기 
+    //이전보다 커지는 시점에서 for문빠져나오기 조합 
     static void dfs(int current, int prev) {
         if (current == M) {
             for (int i = 0; i < M; i++) {

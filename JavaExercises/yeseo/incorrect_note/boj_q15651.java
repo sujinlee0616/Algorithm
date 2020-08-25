@@ -1,7 +1,7 @@
 package incorrect_note;
 
 import java.util.Scanner;
-//! 틀린풀이 !BufferedReader 사용 !  
+//! 틀린풀이 !BufferedReader 사용 ! 중복순열  
 public class boj_q15651 {
 	 	static int N;
 	    static int M;

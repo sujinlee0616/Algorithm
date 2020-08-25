@@ -1,6 +1,6 @@
 package incorrect_note;
 import java.util.*;
-/*
+/* 순열 
   1. 최초 실행 시 dfs에 0이 전달되면서 1부터 n까지 탐색을 한다.
 
   2. 초기 상태이므로 1은 방문하지 않은 상태이기 때문에 check [1]을 방문처리
