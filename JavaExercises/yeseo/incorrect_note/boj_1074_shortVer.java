@@ -1,4 +1,4 @@
-package boj;
+package incorrect_note;
 import java.util.*;
 public class boj_1074_shortVer {
 //Z 

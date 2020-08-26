@@ -1,4 +1,4 @@
-package boj;
+package incorrect_note;
 /*
  단어 정렬
  SET 없는 버전  
