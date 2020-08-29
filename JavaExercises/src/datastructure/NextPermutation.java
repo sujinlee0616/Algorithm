@@ -22,7 +22,6 @@ public class NextPermutation {
 		}
 		
 		//Arrays.sort(arr);
-		Comparator<Integer> comp = (i,j) -> {return (i - j) * -1;};
 		Arrays.sort(arr, (i,j) -> {return (i - j) * -1;});
 		do {
 			print(arr);
