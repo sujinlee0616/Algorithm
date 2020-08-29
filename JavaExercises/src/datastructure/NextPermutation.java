@@ -1,12 +1,13 @@
 package datastructure;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.Scanner;
 
 public class NextPermutation {
 	
 	private int N;
-	private int[] arr;
+	private Integer[] arr;
 	
 	public static void main(String[] args) {
 		new NextPermutation().service();
@@ -15,13 +16,14 @@ public class NextPermutation {
 		Scanner scn = new Scanner(System.in);
 		
 		N = scn.nextInt();
-		arr = new int[N];
+		arr = new Integer[N];
 		for(int i = 0; i < N; i++) {
 			arr[i] = scn.nextInt();
 		}
 		
-		Arrays.sort(arr);
-		
+		//Arrays.sort(arr);
+		Comparator<Integer> comp = (i,j) -> {return (i - j) * -1;};
+		Arrays.sort(arr, (i,j) -> {return (i - j) * -1;});
 		do {
 			print(arr);
 		} while(nextPermutation());
@@ -50,14 +52,14 @@ public class NextPermutation {
 		return true;
 	}
 	
-	private void print(int[] arr) {
+	private void print(Integer[] arr) {
 		System.out.println("\n----------");
 		for(int i = 0; i < N; i++) {
 			System.out.print(arr[i] + " ");
 		}
 		System.out.println("\n----------");
 	}
-	private void swap(int[] arr, int a, int b) {
+	private void swap(Integer[] arr, int a, int b) {
 		int tmp = arr[a];
 		arr[a] = arr[b];
 		arr[b] = tmp;
