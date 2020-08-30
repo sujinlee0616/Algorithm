@@ -1,4 +1,4 @@
-package boj;
+package swea;
 
 import java.util.Scanner;
 // 그냥 수학으로 풀었음
