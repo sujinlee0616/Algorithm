@@ -19,7 +19,7 @@ public class boj_2573 {
 // out) 최초의 시간 T 
 	
 	static int N, M;
-	static int map[][]= new int[301][301];
+	static int map[][]=new int[301][301];
 	static boolean visited[][];
 	static int dx[] = { 1, -1, 0, 0 };
 	static int dy[] = { 0, 0, 1, -1 };
