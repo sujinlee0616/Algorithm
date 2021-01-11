@@ -1,4 +1,4 @@
-package SWEA;
+package swea;
 
 import java.util.HashSet;
 import java.util.Scanner;
